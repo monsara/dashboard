@@ -73,6 +73,7 @@
   @include center-flex();
 
   border-radius: 50%;
+  cursor: pointer;
 
   &_online {
     background: $green-color;
@@ -132,11 +133,6 @@
   }
 }
 
-.head-content__chat-text {
-  font-size: 1.11111vw;
-  color: #4b4b4b;
-}
-
 .head-content__controls {
   display: flex;
 }
@@ -163,7 +159,7 @@
 }
 
 .head-content__input {
-  width: 20vw;
+  width: 22vw;
   margin-right: 7em;
 }
 

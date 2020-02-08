@@ -78,5 +78,14 @@
 
   &_status {
     padding: 0.512em;
+
+    &:hover {
+      border: 1px solid $primary-accent-color;
+      background: $primary-accent-color;
+
+      & .icon {
+        fill: $white-color;
+      }
+    }
   }
 }
