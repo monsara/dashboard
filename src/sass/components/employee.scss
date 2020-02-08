@@ -1,0 +1,27 @@
+.employee {
+  position: relative;
+}
+
+.employee__avatar {
+  width: 2.532vw;
+}
+
+.employee__status {
+  position: absolute;
+  top: -12%;
+  left: -4px;
+
+  width: 1.1vw;
+  height: 1.1vw;
+
+  border-radius: 50%;
+  border: 3px solid $white-color;
+
+  &_online {
+    background: $green-color;
+  }
+
+  &_offline {
+    background: #c5c5c5;
+  }
+}

@@ -2,5 +2,31 @@
  * Все паршалы импортировать в этот файл
  */
 
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'helpers/extras';
 @import 'normalize.scss';
 @import 'base.scss';
+
+/* Components */
+@import 'components/container';
+@import 'components/list';
+@import 'components/image';
+@import 'components/link';
+@import 'components/button';
+@import 'components/input';
+@import 'components/select';
+@import 'components/icon';
+
+@import 'components/page';
+@import 'components/navigation';
+@import 'components/nav-bar';
+@import 'components/content';
+@import 'components/block';
+@import 'components/panel';
+@import 'components/emploees';
+@import 'components/employee';
+@import 'components/rest';
+@import 'components/activity';
+@import 'components/notification';

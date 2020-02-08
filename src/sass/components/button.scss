@@ -1,0 +1,82 @@
+.button {
+  position: relative;
+
+  display: flex;
+  padding: 0.786em 1.4em;
+  border-width: 1px;
+
+  @include center-flex();
+
+  font-size: 0.8861vw;
+
+  color: #4b4b4b;
+  background: none;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 2em;
+
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &_update {
+    padding: 0.766416vw;
+    border-radius: 50%;
+  }
+
+  &_head-content {
+    padding: 11px;
+    border-radius: 50%;
+  }
+
+  &_red {
+    border: none;
+    background: $primary-accent-color;
+  }
+
+  &_dashboard {
+    font-size: 1.11111vw;
+    padding: 0.513em 1.4em;
+  }
+
+  &_bookmark {
+    padding: 1.5em 4.5em;
+    border-top-width: 0;
+
+    background: #f8f8f8;
+    border-radius: 0;
+
+    & .button__text {
+      font-size: 1.519vw;
+    }
+  }
+
+  &_bookmark-active {
+    background: $white-color;
+    border-bottom: 1px solid $white-color;
+  }
+
+  &_edit {
+    display: flex;
+    padding: 0.70312496vw;
+    border-width: 1px;
+
+    @include center-flex();
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #cfcfcf;
+
+    &:hover {
+      border: 1px solid $primary-accent-color;
+      background: $primary-accent-color;
+
+      & .icon {
+        fill: $white-color;
+      }
+    }
+  }
+
+  &_status {
+    padding: 0.512em;
+  }
+}

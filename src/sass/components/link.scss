@@ -1,0 +1,22 @@
+.link {
+  position: relative;
+
+  color: #4b4b4b;
+  text-decoration: none;
+  cursor: pointer;
+
+  &_archiv {
+    font-size: 1.13924vw;
+
+    &::after {
+      display: inline-block;
+      width: 1vw;
+      height: 1vw;
+
+      @include bg-image('../images/icons/arrow-right.svg');
+
+      vertical-align: middle;
+      content: '';
+    }
+  }
+}

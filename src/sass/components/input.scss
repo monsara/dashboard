@@ -1,0 +1,13 @@
+.input {
+  &_search {
+    & .input__control {
+      width: 100%;
+      border: 0;
+
+      font-size: 1.2vw;
+      font-weight: 300;
+
+      background: transparent;
+    }
+  }
+}

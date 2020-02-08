@@ -1,0 +1,950 @@
+<section class="content page__content">
+  <h2 class="content__title visually-hidden">Content</h2>
+
+  <header class="content__head head-content">
+    <div class="head-content__first-line">
+      <ul class="head-content__list list">
+        <li class="head-content__item">
+          <button class="button button_red button_update ">
+            <svg
+              class="icon icon_update"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>update icon</title>
+              <path
+                d="M32 12h-12l4.485-4.485c-2.267-2.266-5.28-3.515-8.485-3.515s-6.219 1.248-8.485 3.515c-2.266 2.267-3.515 5.28-3.515 8.485s1.248 6.219 3.515 8.485c2.267 2.266 5.28 3.515 8.485 3.515s6.219-1.248 8.485-3.515c0.189-0.189 0.371-0.384 0.546-0.583l3.010 2.634c-2.933 3.349-7.239 5.464-12.041 5.464-8.837 0-16-7.163-16-16s7.163-16 16-16c4.418 0 8.418 1.791 11.313 4.687l4.687-4.687v12z"
+              ></path>
+            </svg>
+            <span class="button__text visually-hidden">Update</span>
+          </button>
+        </li>
+
+        <li class="head-content__item">
+          <button class="button button_dashboard">
+            <span class="button__text">Dashboard</span>
+          </button>
+        </li>
+
+        <li class="head-content__item">
+          <span class="head-content__status head-content__status_online">
+            <svg
+              class="icon icon_status"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>status icon</title>
+              <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+            </svg>
+          </span>
+        </li>
+
+        <li class="head-content__item">
+          <span class="head-content__chat">
+            5 user online
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="head-content__second-line">
+      <ul class="head-content__controls list">
+        <li class="head-content__control">
+          <button class="button button_bookmark button_bookmark-active">
+            <span class="icon icon_clock"></span>
+            <span class="button__text">Active Projects</span>
+            <span class="notification notification_warning">9</span>
+          </button>
+        </li>
+
+        <li class="head-content__control">
+          <button class="button button_bookmark">
+            <span class="icon icon_clock"></span>
+            <span class="button__text">Messenger</span>
+            <span class="notification notification_mute">2</span>
+          </button>
+        </li>
+
+        <li class="head-content__control">
+          <span class="input input_search head-content__input">
+            <input
+              class="input__control"
+              type="search"
+              name="search"
+              id="search-header"
+              placeholder="Search Project, User, Task, etc..."
+            />
+          </span>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="content__container">
+    <div class="block content__block content__tabs tabs-content">
+      <ul class="tabs-content__panels list">
+        <li class="tabs-content__panel tabs-content__panel_active">
+          <section class="panel">
+            <h2 class="visually-hidden">Projects panel</h2>
+
+            <header class="block__line panel__head head-panel">
+              <span class="input input_search panel__head-input">
+                <input
+                  class="input__control"
+                  type="search"
+                  name="search"
+                  id="search-panel"
+                  placeholder="Search a Project with Name, Task, User..."
+                />
+              </span>
+
+              <span class="select panel__select">
+                <select name="projects" id="projects" class="select__dropdown">
+                  <option value="project_1" class="select__option">
+                    New Projects (descending)</option
+                  >
+                  <option value="project_1" class="select__option"
+                    >Project 2</option
+                  >
+                  <option value="project_1" class="select__option"
+                    >Project 3</option
+                  >
+                </select>
+              </span>
+
+              <button class="button panel__add">
+                <svg
+                  class="icon icon_add"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <title>plus</title>
+                  <path
+                    d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"
+                  ></path>
+                </svg>
+
+                <span class="buton__text visually-hidden">Add project</span>
+              </button>
+            </header>
+
+            <section class="panel__content">
+              <h3 class="visually-hidden">Projects</h3>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >23%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Create Contact Formular</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Worlda</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >87%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Create Subpage PSD</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Panorama</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >83%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Layout & implementation in HTML & CSS</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Ebay Relaunch</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div
+                class="block__line panel__project panel__project_finised panel-project"
+              >
+                <span
+                  class="panel-project__item panel-project__progress panel-project__progress_finised"
+                  >66%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Creating the Contex</span
+                >
+
+                <ul
+                  class="employees panel-project__employees panel-project-employees list"
+                >
+                  <li class="employee panel-project-employees__item">
+                    <img
+                      src="./images/employee-2.png"
+                      alt="employee"
+                      class="employee__avatar"
+                    />
+                    <span class="employee__status employee__status_online">
+                      <span class="employee__status-text visually-hidden"
+                        >Offline</span
+                      >
+                    </span>
+                  </li>
+
+                  <li class="employee panel-project-employees__item">
+                    <img
+                      src="./images/employee-1.png"
+                      alt="employee"
+                      class="employee__avatar"
+                    />
+                    <span class="employee__status employee__status_online">
+                      <span class="employee__status-text visually-hidden"
+                        >Online</span
+                      >
+                    </span>
+                  </li>
+
+                  <li class="employee panel-project-employees__item">
+                    <img
+                      src="./images/employee-2.png"
+                      alt="employee 1"
+                      class="employee__avatar"
+                    />
+                    <span class="employee__status employee__status_offline">
+                      <span class="employee__status-text visually-hidden"
+                        >Offline</span
+                      >
+                    </span>
+                  </li>
+
+                  <li
+                    class="rest panel-project__rest panel-project-employees__item"
+                  >
+                    <span class="rest__value">+3</span>
+                  </li>
+                </ul>
+
+                <span class="panel-project__item button panel-project__update">
+                  <span
+                    class="icon icon_update panel-project__update-icon"
+                  ></span>
+                  <time
+                    class="panel-project__update-date"
+                    datetime="2020-02-03T1:40"
+                    >Today,
+                    <span class="panel-project__update-date-time">13:40</span>
+                    PM</time
+                  >
+                </span>
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+              </div>
+
+              <div
+                class="block__line panel__project panel__project_finised panel-project"
+              >
+                <span
+                  class="panel-project__item panel-project__progress panel-project__progress_finised panel-project__progress_ready"
+                  >Ready</span
+                >
+
+                <span
+                  class="panel-project__item panel-project__name panel-project__name_ready"
+                  >Implementation in the Layout</span
+                >
+
+                <ul
+                  class="employees panel-project__employees panel-project-employees list"
+                >
+                  <li class="employee panel-project-employees__item">
+                    <img
+                      src="./images/employee-1.png"
+                      alt="employee 1"
+                      class="employee__avatar"
+                    />
+                    <span class="employee__status employee__status_online">
+                      <span class="employee__status-text visually-hidden"
+                        >Online</span
+                      >
+                    </span>
+                  </li>
+
+                  <li class="employee panel-project-employees__item">
+                    <img
+                      src="./images/employee-2.png"
+                      alt="employee 1"
+                      class="employee__avatar"
+                    />
+                    <span class="employee__status employee__status_offline">
+                      <span class="employee__status-text visually-hidden"
+                        >Offline</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+
+                <span class="panel-project__item button panel-project__update">
+                  <span
+                    class="icon icon_update panel-project__update-icon"
+                  ></span>
+                  <time
+                    class="panel-project__update-date"
+                    datetime="2020-02-03T1:40"
+                    >Yestarday,
+                    <span class="panel-project__update-date-time">12:40</span>
+                    PM</time
+                  >
+                </span>
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >98%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Lorem ipsum dolor sit amet, elitr, sed diam <br />
+                  nonumy eirmod tempor</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Panorama</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >98%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Create Contact Formular</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Worlda</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >98%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Create Contact Formular</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Worlda</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+
+              <div class="block__line panel__project panel-project">
+                <span class="panel-project__item panel-project__progress"
+                  >98%</span
+                >
+
+                <span class="panel-project__item panel-project__name"
+                  >Create Contact Formular</span
+                >
+
+                <span class="panel-project__item panel-project__tag button"
+                  >Worlda</span
+                >
+
+                <button class="panel-project__item button button_edit">
+                  <svg
+                    class="icon icon_magnifying-glass"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>edit icon</title>
+                    <path
+                      d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+                    ></path>
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <button class="panel-project__item button button_status">
+                  <svg
+                    class="icon icon_arrow"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z"
+                    />
+                    <path d="M0-.75h48v48h-48z" fill="none" />
+                  </svg>
+
+                  <span class="buton__text visually-hidden">Edit</span>
+                </button>
+
+                <span class="panel-project__item icon icon_arrow_down"></span>
+              </div>
+            </section>
+
+            <footer class="block__line block__footer">
+              <a class="link link_archiv">Project Archive</a>
+            </footer>
+          </section>
+        </li>
+
+        <li class="tabs-content__panel"></li>
+      </ul>
+    </div>
+
+    <section class="block content__block content__activity activity">
+      <h3 class="visually-hidden">Active panel</h3>
+
+      <ul class="activity__list list">
+        <li class="block__line block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-4.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_online activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Online</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Mark P.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-2.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_online activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Online</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Marvin S.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-3.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Sebastian K.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-4.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Mark P.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-5.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Philip O.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-4.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Mark P.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-6.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Benni I.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-6.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Benni I.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-4.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Benni I.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+
+        <li class="block__line activity__item">
+          <div class="employee activity__employee">
+            <img
+              src="./images/employee-6.png"
+              alt="employee"
+              class="employee__avatar"
+            />
+
+            <span
+              class="employee__status employee__status_offline activity__employee-status"
+            >
+              <span class="employee__status-text visually-hidden">Offline</span>
+            </span>
+          </div>
+
+          <div class="activity__content">
+            <span class="activity__employee">Benni I.</span>
+
+            <span class="activity__descr">add an Image into Worlda</span>
+
+            <time class="activity__date" datetime="2020-02-04T10:30"
+              >Today, <span class="activity__time">10:30</span> PM</time
+            >
+          </div>
+        </li>
+      </ul>
+
+      <div class="block__line block__footer">
+        <a class="link link_archiv">Activity Archiv</a>
+      </div>
+    </section>
+  </div>
+</section>

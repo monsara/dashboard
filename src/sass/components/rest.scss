@@ -1,0 +1,25 @@
+.rest {
+  position: relative;
+
+  display: flex;
+  width: 2.532vw;
+  height: 2.532vw;
+  border-width: 1px;
+
+  @include center-flex();
+
+  font-weight: 700;
+
+  color: #cfcfcf;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #cfcfcf;
+}
+
+.rest__value {
+  position: absolute;
+  left: 17%;
+
+  font-size: 1vw;
+}

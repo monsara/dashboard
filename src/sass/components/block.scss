@@ -1,0 +1,23 @@
+.block__line {
+  display: flex;
+  min-height: 5.6962vw;
+  padding: 0 1.9em;
+  border-bottom-width: 1px;
+
+  align-items: center;
+
+  border-bottom-style: solid;
+  border-bottom-color: #cfcfcf;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.block__footer {
+  min-height: 3.45vw;
+  border: 0;
+  border-top: 1px solid #cfcfcf;
+
+  flex-grow: 0;
+}

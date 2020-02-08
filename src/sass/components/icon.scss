@@ -1,0 +1,44 @@
+.icon {
+  &_nav-bar {
+    fill: #4e5053;
+  }
+
+  &_nav-bar-active {
+    fill: $primary-accent-color;
+  }
+
+  &_update {
+    width: 1vw;
+    height: auto;
+
+    fill: $white-color;
+  }
+
+  &_status {
+    width: 1vw;
+    height: auto;
+
+    fill: $white-color;
+  }
+
+  &_add {
+    width: 1vw;
+    height: auto;
+
+    fill: $white-color;
+  }
+
+  &_magnifying-glass {
+    width: 1vw;
+    height: auto;
+
+    fill: #a6a6a6;
+  }
+
+  &_arrow {
+    width: 1.5vw;
+    height: auto;
+
+    fill: #a6a6a6;
+  }
+}

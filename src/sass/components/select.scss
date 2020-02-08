@@ -1,0 +1,39 @@
+.select {
+  padding: 0.625em 1.4em;
+  padding-right: 2.5em;
+  border-width: 1px;
+
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #cfcfcf;
+
+  &::after {
+    position: absolute;
+    top: 45%;
+    right: 8%;
+
+    display: block;
+    width: 0.7vw;
+    height: 0.39vw;
+
+    background-image: url(../images/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    // @include bg-image('../images/icons/arrow-down.svg');
+
+    content: '';
+  }
+}
+
+.select__dropdown {
+  border: 0;
+
+  font-size: 0.9vw;
+
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

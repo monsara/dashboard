@@ -1,0 +1,35 @@
+.activity__content {
+  font-size: 1.13924vw;
+}
+
+.activity__list {
+  height: 0;
+
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.activity__employee {
+  margin-right: 0.6em;
+  color: #4b4b4b;
+}
+
+.activity__descr {
+  color: #909090;
+}
+
+.activity__employee-status {
+  width: 1vw;
+  height: 1vw;
+}
+
+.activity__date {
+  font-size: 0.886vw;
+
+  color: #4b4b4b;
+  text-transform: uppercase;
+}
+
+.activity__time {
+  font-size: 0.886vw;
+}
